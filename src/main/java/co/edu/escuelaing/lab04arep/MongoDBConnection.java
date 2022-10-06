@@ -43,7 +43,7 @@ public class MongoDBConnection {
         String message = "";
         FindIterable<Document> iterable = collection.find();
         for (Document document : iterable) {
-            message += "_Id:_ " + document.get("_id") + " _Fecha:_ " + document.get("Fecha").toString() + " _Mensaje:_ " +  document.get("Mensaje").toString() + "<br><br>";
+            message += document.toJson();
         }
         return message;
     }

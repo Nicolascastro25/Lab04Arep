@@ -17,9 +17,10 @@ public class SparkWebServer {
     private static MongoDBConnection mongoDb = new MongoDBConnection();
 
     public static void main(String[] args) {
+        staticFileLocation("/public");
         port(getPort());
         get("/mensajes", (req, res) -> traerInfoColeccion(req, res));
-
+        get("/results", (req, res) -> resultsPage(req, res));
     }
 
     private static String traerInfoColeccion(Request req, Response res) {
@@ -32,6 +33,12 @@ public class SparkWebServer {
                 + "<h4>La info de la base de datos es: </h4>"
                 + "<br>"
                 + "<br>"
+                + "<form action=\"/results\">"
+                + "  Mensaje guardar: <br>"
+                + "  <input type=\"text\" name=\"mensaje\" value=\"Escribe algo aquí\">"
+                + "  <br>"
+                + "  <input type=\"submit\" value=\"Submit\">"
+                + "</form>"
                 + getMessages()
                 + "</body>"
                 + "</html>";
@@ -45,13 +52,17 @@ public class SparkWebServer {
         return 4567;
     }
 
-    private static String insertMessage() {
-        return "hola";
-    }
-
     private static String getMessages() {
         String content = mongoDb.getInfoDB();
         return content;
     }
 
+    private static String resultsPage(Request req, Response res) {
+        System.out.println(req.queryParams("mensaje"));        
+        return req.queryParams("mensaje");
+    }
+
+    private static String insertMessage() {
+        return "hola";
+    }
 }
