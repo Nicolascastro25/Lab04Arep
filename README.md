@@ -30,3 +30,22 @@ Accedemos al menu de repositorios y cree un repositorio:
 
 ### Montaje en AWS:
 
+Lanzamos y descargamos la instacia creada para el montaje del contenedor:
+
+![image](https://user-images.githubusercontent.com/25957863/197451638-d3929082-dd85-45b9-9f89-36c7aa19e03c.png)
+
+Una vez montado el contenedor en la instancia de AWS nos dirigimos a la siguiente direccion:
+
+![image](https://user-images.githubusercontent.com/25957863/197451720-95075509-c68b-4363-a193-d60cf64646e4.png)
+
+Y vemos nuestro servicio SparkWeb montado con acceso a la base de datos Mongo:
+
+![image](https://user-images.githubusercontent.com/25957863/197451518-a9bd6a04-f25d-40cb-8f8b-32d80f12055d.png)
+
+![image](https://user-images.githubusercontent.com/25957863/197451557-eecf0e34-75fc-4b30-b77e-52a23abca860.png)
+
+La maquina estara apagada por efectos de costos.
+
+### Autor:
+- Jaime Nicolás Castro Acuña
+
