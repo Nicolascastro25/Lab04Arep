@@ -30,3 +30,6 @@ Accedemos al menu de repositorios y cree un repositorio:
 
 ### Montaje en AWS:
 
+![image](https://user-images.githubusercontent.com/25957863/197451308-f0be547e-7837-42e9-927c-5289004ab2fb.png)
+
+![image](https://user-images.githubusercontent.com/25957863/197451371-74c5438e-9cf0-4e2e-92ed-e1a608f3df3a.png)
