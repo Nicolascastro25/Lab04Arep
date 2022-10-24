@@ -44,3 +44,8 @@ Y vemos nuestro servicio SparkWeb montado con acceso a la base de datos Mongo:
 
 ![image](https://user-images.githubusercontent.com/25957863/197451557-eecf0e34-75fc-4b30-b77e-52a23abca860.png)
 
+La maquina estara apagada por efectos de costos.
+
+### Autor:
+- Jaime Nicolás Castro Acuña
+
