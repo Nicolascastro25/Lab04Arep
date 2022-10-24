@@ -1,5 +1,5 @@
 # Lab 04 Arep
-### Definición problema:
+## Definición problema:
 Para la tarea usted debe construir una aplicación con la arquitectura propuesta y desplegarla en AWS usando EC2 y Docker.
 
 ![image](https://user-images.githubusercontent.com/25957863/197447879-8a3e1260-ff10-4b0b-81d6-02b1d171852b.png)
